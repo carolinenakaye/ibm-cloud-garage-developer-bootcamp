@@ -12,10 +12,8 @@ let url = URL(string: urlString)!
 
 ```swift
 let task = session.dataTask(with: url, completionHandler: { data, response, error in
-
     // Do something...
 })
-
 task.resume()
 ```
 
@@ -33,7 +31,7 @@ let task = session.dataTask(with: url) { data, response, error in
 
 ```swift
 if error != nil {
-    // OH NO! An error occurred...   
+    // An error occurred...   
     self.handleClientError(error)
     return
 }
